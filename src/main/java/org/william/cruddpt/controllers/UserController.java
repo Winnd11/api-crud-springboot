@@ -8,7 +8,7 @@ import org.william.cruddpt.repositories.UserRepository;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/get")
+@RequestMapping(value = "/db")
 public class UserController {
 
     @Autowired
