@@ -1,12 +1,13 @@
-## SpringBoot Api
+
+# SpringBoot Api
 CRUD Api Rest build with spring boot, JPA, and H2 database
 
-### Intalation
+## Intalation
 
-Java >= 8
-PostMan
+- Java >= 8
+- PostMan
 
-### Getting Started
+## Getting Started
 1. Clone this repo
 ```git
 git clone https://github.com/Winnd11/api-springboot.git
@@ -16,20 +17,24 @@ git clone https://github.com/Winnd11/api-springboot.git
 
 the app will run at http://localhost:5500
 
+---
+
 ### Get Methods
 
-I recommend using postman for get method and post method.
+| # | Get Users | Get User By Id |
+| -- | -- | -- | 
+| # | db/user/get | db/user/get/'id' | 
 
-Get all users ```db/user/get```
-
-Get a specific user by id ```db/user/get/"id"```
+---
 
 ### Post Methods
-Delete a specific user by id  ```db/delete/"id"```
 
-Insert user  ```db/insert```
+| # | Insert User | Delete User | Update User
+| -- | -- | -- | -- |
+| # | db/insert | db/delete/'id' | db/update/'id' |
 
-The post method to add a user you must use in row format and type json
+
+The post method to insert, delete and update a user must in row format and type json
 
 ```json
 {
