@@ -41,18 +41,13 @@ The post method to insert, delete and update a user must in row format and type 
 
 ```json
 {
-
-"name":  "dave",
-
-"email":  "dave@gmail.com",
-
-"department":  {
-
-"id":  2
-
+  "name": "dave",
+  "email": "dave@gmail.com",
+  "department": {
+    "id": 2
+  }
 }
 
-}
 ```
 
 ## MIT License
