@@ -13,7 +13,10 @@ CRUD Api Rest build with spring boot, JPA, and H2 database
 git clone https://github.com/Winnd11/api-springboot.git
 ```
 
-2. run main
+2. run maven
+```git
+./mvnw.cmd spring-boot:run
+```
 
 the app will run at http://localhost:5500
 
@@ -38,18 +41,13 @@ The post method to insert, delete and update a user must in row format and type 
 
 ```json
 {
-
-"name":  "dave",
-
-"email":  "dave@gmail.com",
-
-"department":  {
-
-"id":  2
-
+  "name": "dave",
+  "email": "dave@gmail.com",
+  "department": {
+    "id": 2
+  }
 }
 
-}
 ```
 
 ## MIT License
