@@ -24,20 +24,37 @@ the app will run at http://localhost:5500
 
 ### Get Methods
 
-| # | Get Users | Get User By Id |
-| -- | -- | -- | 
-| # | db/user/get | db/user/get/'id' | 
+| Get All Users | Get User By Id |
+| -- | -- | 
+| /db | /db/'id' | 
 
 ---
 
-### Post Methods
+### Post Method
 
-| # | Insert User | Delete User | Update User
-| -- | -- | -- | -- |
-| # | db/insert | db/delete/'id' | db/update/'id' |
+| Insert User |
+| -- |
+| /db |
 
+---
 
-The post method to insert, delete and update a user must in row format and type json
+### Delete Method
+
+| Delete User By Id |
+| -- |
+| /db/'id' |
+
+---
+
+### Patch Method
+
+| Update User |
+| -- |
+| /db |
+
+---
+
+The POST and PATCH methods must be in row format and use JSON type
 
 ```json
 {
