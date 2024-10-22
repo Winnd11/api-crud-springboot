@@ -15,27 +15,27 @@ public class UserController {
     @Autowired
     UserRepository repository;
 
-    @GetMapping(value = "/user")
+    @GetMapping(value = "")
     public List<User> getAll() {
         return repository.findAll();
     }
 
-    @GetMapping(value = "/user/{id}")
+    @GetMapping(value = "{id}")
     public User getUser(@PathVariable Long id) {
         return repository.findById(id).get();
     }
 
-    @PostMapping(value = "/delete/{id}")
+    @DeleteMapping(value = "{id}")
     public void deleteUser(@PathVariable Long id) {
         repository.deleteById(id);
     }
 
-    @PostMapping(value = "/insert")
+    @PostMapping(value = "")
     public User insertUser(@RequestBody User user) {
         return repository.save(user);
     }
 
-    @PostMapping(value = "/update/{id}")
+    @PatchMapping(value = "{id}")
     public User updateUser(@PathVariable Long id, @RequestBody User user) {
         Optional<User> result = repository.findById(id);
         if (result.isPresent()) {
